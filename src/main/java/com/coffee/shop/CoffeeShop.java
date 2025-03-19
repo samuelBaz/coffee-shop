@@ -1,7 +1,18 @@
 package com.coffee.shop;
 
 public class CoffeeShop {
-    public void printInvoice(Coffee coffee){
+
+    public Drink prepareOrder(Commands commands){
+        Drink coffee = new Coffee();
+        if(commands.isWithMilk()){
+            coffee = new MilkDecorator(coffee);
+        }
+        if(commands.isWithSugar()){
+            coffee = new SugarDecorator(coffee);
+        }
+        return coffee;
+    }
+    public void printInvoice(Drink coffee){
         System.out.println("===============================");
         System.out.println("        COFFEE SHOP");
         System.out.println("===============================");
