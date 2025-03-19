@@ -1,5 +1,6 @@
 package com.coffee.shop;
 
+import com.coffee.shop.decorators.CinnamonDecorator;
 import com.coffee.shop.decorators.MilkDecorator;
 import com.coffee.shop.decorators.SugarDecorator;
 
@@ -12,6 +13,9 @@ public class CoffeeShop {
         }
         if(commands.isWithSugar()){
             coffee = new SugarDecorator(coffee);
+        }
+        if(commands.isWithCinnamon()){
+            coffee = new CinnamonDecorator(coffee);
         }
         return coffee;
     }
