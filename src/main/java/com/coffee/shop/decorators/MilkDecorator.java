@@ -1,4 +1,7 @@
-package com.coffee.shop;
+package com.coffee.shop.decorators;
+
+import com.coffee.shop.Drink;
+import com.coffee.shop.decorators.DrinkDecorator;
 
 public class MilkDecorator extends DrinkDecorator {
     public MilkDecorator(Drink drink){

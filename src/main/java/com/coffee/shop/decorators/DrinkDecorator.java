@@ -1,4 +1,6 @@
-package com.coffee.shop;
+package com.coffee.shop.decorators;
+
+import com.coffee.shop.Drink;
 
 public abstract class DrinkDecorator implements Drink {
 

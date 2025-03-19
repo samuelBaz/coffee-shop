@@ -1,6 +1,9 @@
-package com.coffee.shop;
+package com.coffee.shop.decorators;
 
-public class SugarDecorator extends  DrinkDecorator{
+import com.coffee.shop.Drink;
+import com.coffee.shop.decorators.DrinkDecorator;
+
+public class SugarDecorator extends DrinkDecorator {
 
     public SugarDecorator(Drink drink) {
         super(drink);

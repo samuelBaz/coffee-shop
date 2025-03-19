@@ -1,5 +1,8 @@
 package com.coffee.shop;
 
+import com.coffee.shop.decorators.MilkDecorator;
+import com.coffee.shop.decorators.SugarDecorator;
+
 public class CoffeeShop {
 
     public Drink prepareOrder(Commands commands){
